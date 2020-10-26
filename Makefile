@@ -1,7 +1,7 @@
 all: compile link
 
 compile:
-	cd src/compiled/ && g++ -c ../../snake/main.cpp
+	cd src/compiled/ && g++ -c ../../snake/*.cpp
 	cd src/compiled/ && g++ -c ../../snake/game/*.cpp
 	cd src/compiled/ && g++ -c ../../snake/manager/*.cpp
 

@@ -1,5 +1,4 @@
-#include "game/game.hpp"
-#include "manager/config.hpp"
+#include "game.hpp"
 
 using namespace herbglitch;
 int main(){
