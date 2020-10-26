@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g transform="matrix(1, 0, 0, 1, -2.409984, 70.811012)" style="">
+    <title>Toung</title>
+    <rect x="246.486" y="69.189" width="12" height="60" style="stroke: rgb(164, 47, 47); stroke-width: 0px; fill: rgb(164, 26, 26);"/>
+    <path style="stroke: rgb(164, 47, 47); stroke-width: 0px; fill: rgb(164, 26, 26);" transform="matrix(0.906308, 0.422618, -0.422618, 0.906308, 50.392784, -94.921913)" d="M 251.486 34.595 H 253.486 A 5 5 0 0 1 258.486 39.595 V 64.595 H 246.486 V 39.595 A 5 5 0 0 1 251.486 34.595 Z" bx:shape="rect 246.486 34.595 12 30 5 5 0 0 1@aa9bc93c"/>
+    <path style="stroke: rgb(164, 47, 47); stroke-width: 0px; fill: rgb(164, 26, 26);" transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -3.080943, 118.488358)" d="M 251.486 34.595 H 253.486 A 5 5 0 0 1 258.486 39.595 V 64.595 H 246.486 V 39.595 A 5 5 0 0 1 251.486 34.595 Z" bx:shape="rect 246.486 34.595 12 30 5 5 0 0 1@aa9bc93c"/>
+  </g>
+  <path style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(23, 99, 20);" d="M 250 110.778 H 250 A 150 150 0 0 1 400 260.778 V 510.778 H 100 V 260.778 A 150 150 0 0 1 250 110.778 Z" transform="matrix(1, 0, 0.00022, 1, -0.064131, -10.778474)" bx:shape="rect 100 110.778 300 400 150 150 0 0 1@bf2fc206"/>
+  <circle style="fill: rgb(23, 99, 20);" cx="352.432" cy="299.832" r="100.168"/>
+  <circle style="fill: rgb(23, 99, 20);" cx="152.182" cy="299.746" r="100.082"/>
+  <circle style="fill: rgb(214, 224, 214);" cx="135.78" cy="290.371" r="73.95"/>
+  <circle style="fill: rgb(214, 224, 214);" cx="367.027" cy="290.371" r="73.95"/>
+  <circle style="" cx="146.32" cy="260.375" r="39.625"/>
+  <circle style="" cx="360.375" cy="260.375" r="39.625"/>
+</svg>
