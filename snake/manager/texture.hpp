@@ -1,11 +1,11 @@
-#ifndef TEXTURE_H
-#define TEXTURE_H
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "setting.hpp"
 
 namespace herbglitch {
     namespace manager {
-        class Texture {
+        class Texture : public Setting {
         public:
             Texture();
             ~Texture();
@@ -20,5 +20,3 @@ namespace herbglitch {
         };
     }
 }
-
-#endif // TEXTURE_H

@@ -22,7 +22,7 @@ namespace herbglitch {
                 std::exit(-1);
             }
 
-            textures[name] = texture;
+            textures.insert(std::pair<std::string, sf::Texture *>(name, texture));
         }
         
         sf::Texture* &Texture::getTexture(std::string name){ return textures[name]; }

@@ -1,22 +1,27 @@
 #pragma once
+#include "../states/states.hpp"
+#include "../states/menu/menu.hpp"
+#include "../manager/config.hpp"
 #include <SFML/Graphics.hpp>
 
 namespace herbglitch {
-    namespace handler {
-        template <class State>
-        class Game {
-        public:
-            Game();
-            ~Game();
+    namespace game { struct Data; }
 
-            void update();
-            void render();
+    class Handler {
+    public:
+        Handler(game::Data *data);
+        ~Handler();
 
-            void AddState();
-            void RemoveState();
-            void PauseState();
-        private:
-            std::map<std::string, State *> states;
-        };
-    }
+        void load();
+
+        void update();
+        void render();
+
+        void AddState(State *state, bool isReplacing = true);
+        void RemoveState();
+
+    private:
+        std::vector<State *> states;
+        game::Data *data;
+    };
 }
