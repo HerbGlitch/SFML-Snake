@@ -4,7 +4,8 @@
 
 namespace herbglitch {
     Handler::Handler(game::Data *data): data(data) {
-        AddState(new state::Menu(), false);
+        load();
+        AddState(new state::Menu(data), false);
     }
 
     Handler::~Handler(){

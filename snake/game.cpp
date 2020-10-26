@@ -5,16 +5,17 @@ namespace herbglitch {
         data = new game::Data();
         data->handler = new Handler(data);
 
-        data->window.create(sf::VideoMode(800, 800), "Snake", sf::Style::Close | sf::Style::Titlebar);
+        // data->handler->load();
+        data->window.create(sf::VideoMode(1920, 1080), "Snake", sf::Style::Close | sf::Style::Titlebar);
         Run();
     }
 
     Game::~Game(){
+        delete data->handler;
         delete data;
     }
 
     void Game::Run(){
-        data->handler->load();
 
         float dt = clock.getElapsedTime().asSeconds();
         float new_dt = 0.0f, elapsed = 0.0f;
@@ -29,12 +30,12 @@ namespace herbglitch {
             }
 
             new_dt = clock.getElapsedTime().asSeconds();
-            elapsed = new_dt - dt;
+            elapsed += new_dt - dt;
             dt = new_dt;
 
-            if(elapsed > 1.0f / 60.0f){
+            if(elapsed > (1.0f / 60.0f)){
                 data->handler->update();
-                elapsed -= 1.0f / 60.0f;
+                elapsed -= (1.0f / 60.0f);
             }
 
             //render

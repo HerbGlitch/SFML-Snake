@@ -1,6 +1,6 @@
 all: compile link
 
-compile: main handler manager states
+compile: main handler manager menuState snakeState
 
 main:
 	cd src/compiled/ && g++ -c ../../snake/*.cpp
@@ -11,8 +11,12 @@ handler:
 manager:
 	cd src/compiled/ && g++ -c ../../snake/manager/*.cpp
 
-states:
+menuState:
 	cd src/compiled/ && g++ -c ../../snake/states/menu/*.cpp
+
+snakeState:
+	cd src/compiled/ && g++ -c ../../snake/states/snake/*.cpp
+	cd src/compiled/ && g++ -c ../../snake/states/snake/background/*.cpp
 
 link:
 	g++ src/compiled/*.o -o main -Lsrc/lib -Isrc/include -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
