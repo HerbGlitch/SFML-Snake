@@ -4,12 +4,19 @@
 namespace herbglitch {
     namespace snake {
         Background::Background(game::Data *data): data(data){
-            tiles.push_back(sf::Sprite(data->texture.getTexture("background_tile")));
-            tiles.push_back(sf::Sprite(data->texture.getTexture("background_tile")));
-            tiles.at(0).setScale(sf::Vector2f(0.2, 0.2));
-            tiles.at(1).setScale(sf::Vector2f(0.2, 0.2));
-            tiles.at(1).setColor(sf::Color::Red);
-            tiles.at(1).setPosition(tiles.at(0).getGlobalBounds().width, 0);
+            int height = 99;
+            int width = 99;
+            float scale = 0.15f;
+            bool toggle = false;
+            for(int y = 0; y < height; y++){
+                for(int x = 0; x < width; x++){
+                    if(toggle){ tiles.push_back(sf::Sprite(data->texture.getTexture("background_tile"))); }
+                    else { tiles.push_back(sf::Sprite(data->texture.getTexture("background_tile_01"))); }
+                    tiles.at((y * width) + x).setScale(scale, scale);
+                    tiles.at((y * width) + x).setPosition(tiles.at(0).getGlobalBounds().width * x, tiles.at(0).getGlobalBounds().height * y);
+                    toggle = !toggle;
+                }
+            }
         }
 
         Background::~Background(){}

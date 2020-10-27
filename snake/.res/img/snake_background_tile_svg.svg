@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="500" style="stroke-width: 0px; stroke: rgb(0, 0, 0); fill: rgb(69, 240, 83);"/>
+  <rect width="500" height="500" style="stroke-width: 0px; stroke: rgb(0, 0, 0); fill: rgb(5, 197, 21);"/>
+  <line style="stroke-linecap: round; stroke-width: 25px; stroke: rgb(42, 95, 53);" x1="50.625" y1="210.811" x2="243.181" y2="48.109"/>
+  <line style="stroke-linecap: round; stroke-width: 25px; stroke: rgb(42, 95, 53);" x1="243.181" y1="438.649" x2="435.737" y2="275.947"/>
+  <line style="stroke-linecap: round; stroke-width: 25px; stroke: rgb(42, 95, 53);" x1="70.077" y1="390.811" x2="425.123" y2="90.811"/>
 </svg>
